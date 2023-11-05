@@ -11,8 +11,6 @@ function addSong() {
   const cookies = document.cookie.split("=");
   const token = cookies[cookies.length - 1];
 
-  console.log(token);
-
   fetch("http://localhost:5000/addNewSong", {
     method: "POST",
     headers: {

@@ -1,0 +1,65 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to right, black, rgb(148, 148, 148));
+  font-weight: bold;
+  color: white;
+}
+
+.admin-form {
+  outline: none;
+  width: 70vw;
+  padding: 1rem;
+  align-self: center;
+  margin: 2rem auto;
+  height: auto;
+  min-height: 80vh;
+  border: solid;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.admin-form form label {
+  margin-top: 1rem;
+  outline: none;
+  min-width: 16rem;
+}
+
+.admin-form input {
+  min-width: 16rem;
+  border-width: 0 0 2px;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  outline: none;
+}
+
+.admin-form input::placeholder {
+  color: rgb(176, 176, 176);
+}
+
+button {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 0 5px white;
+  transition: all 0.3s ease-out;
+  outline: none;
+}
+
+button:hover {
+  box-shadow: 0 0 0 black;
+}

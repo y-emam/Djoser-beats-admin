@@ -6,7 +6,8 @@ function addSong() {
   const mp3 = form.mp3.value;
   const wav = form.wav.value;
   const stem = form.stem.value;
-  const licence = form.stem.licence;
+  const licence = form.licence.value;
+  const parentFolder = form.parentFolder.value;
 
   const cookies = document.cookie.split("=");
   const token = cookies[cookies.length - 1];
@@ -25,6 +26,7 @@ function addSong() {
       wav,
       stem,
       licence,
+      parentFolder,
     }),
   })
     .then((res) => res.json())

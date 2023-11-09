@@ -3,7 +3,8 @@ function addSong() {
   const name = form.name.value;
   const bpm = form.bpm.value;
   const image = form.image.value;
-  const mp3 = form.mp3.value;
+  const mp3Edit = form.mp3.value;
+  const mp3Org = form.mp3.value;
   const wav = form.wav.value;
   const stem = form.stem.value;
   const licence = form.licence.value;
@@ -22,7 +23,8 @@ function addSong() {
       name,
       bpm,
       image,
-      mp3,
+      mp3Edit,
+      mp3Org,
       wav,
       stem,
       licence,

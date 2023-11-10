@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/logo.jpg" />
     <link rel="stylesheet" href="../css/admin.css" />
   </head>
-  <script src="../js/admin.js"></script>
+
   <body>
     <div class="admin-form">
       <h1>Upload Your Song</h1>
@@ -27,17 +27,19 @@
           name="bpm"
           placeholder="Enter BPM of the beat"
         />
-        <label for="image"> Image: </label>
+        <label for="image"> Image URL (From Firebase): </label>
         <input
           required
-          type="file"
+          id="imageInput"
+          type="text"
           name="image"
           placeholder="Enter Image URL of the Beat"
         />
-        <label for="mp3Edit"> MP3 Editited File: </label>
+        <label for="mp3Edit"> MP3 Editited URL (From Firebase): </label>
         <input
           required
-          type="file"
+          id="mp3EditInput"
+          type="text"
           name="mp3Edit"
           placeholder="Enter Image URL of the Beat"
         />
@@ -79,5 +81,6 @@
       </form>
       <button onclick="addSong()">Add Song</button>
     </div>
+    <script src="../js/admin.js"></script>
   </body>
 </html>

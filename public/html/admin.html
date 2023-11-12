@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo.jpg" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <script src="../js/admin.js"></script>
+  <body>
+    <div class="admin-form">
+      <h1>Upload Your Song</h1>
+      <form>
+        <label for="name"> Song Name: </label>
+        <input
+          required
+          type="text"
+          name="name"
+          placeholder="Enter Beat Name"
+          autofocus
+        />
+        <label for="bpm"> BPM: </label>
+        <input
+          required
+          type="number"
+          name="bpm"
+          placeholder="Enter BPM of the beat"
+        />
+        <label for="image"> Image: </label>
+        <input
+          required
+          type="file"
+          name="image"
+          placeholder="Enter Image URL of the Beat"
+        />
+        <label for="mp3Edit"> MP3 Editited File: </label>
+        <input
+          required
+          type="file"
+          name="mp3Edit"
+          placeholder="Enter Image URL of the Beat"
+        />
+        <label for="mp3Org"> MP3 Original URL: </label>
+        <input
+          required
+          type="text"
+          name="mp3Org"
+          placeholder="Enter MP3 URL of the beat"
+        />
+        <label for="wav"> WAV URL: </label>
+        <input
+          required
+          type="text"
+          name="wav"
+          placeholder="Enter WAV URL of the beat"
+        />
+        <label for="stem"> STEM URL: </label>
+        <input
+          required
+          type="text"
+          name="stem"
+          placeholder="Enter Stem URL of the beat"
+        />
+        <label for="licence"> Licence URL: </label>
+        <input
+          required
+          type="text"
+          name="licence"
+          placeholder="Enter Licence URL of the beat"
+        />
+        <label for="parentFolder"> Parent Folder URL: </label>
+        <input
+          required
+          type="text"
+          name="parentFolder"
+          placeholder="Enter URL of Parent Folder"
+        />
+      </form>
+      <button onclick="addSong()">Add Song</button>
+    </div>
+  </body>
+</html>

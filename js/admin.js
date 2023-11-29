@@ -13,7 +13,7 @@ function addSong() {
   const cookies = document.cookie.split("=");
   const token = cookies[cookies.length - 1];
 
-  fetch("http://localhost:5000/addNewSong", {
+  fetch("https://djoser-beats.ew.r.appspot.com/addNewSong", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -5,7 +5,7 @@ function login() {
   console.log(email);
   console.log(password);
 
-  fetch("http://localhost:5000/adminLogin", {
+  fetch("https://djoser-beats.ew.r.appspot.com/adminLogin", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -1,3 +1,8 @@
+function getToken() {
+  const cookies = document.cookie.split("=");
+  return cookies[cookies.length - 1];
+}
+
 function addSong() {
   const form = document.getElementsByTagName("form")[0];
   const name = form.name.value;
@@ -10,8 +15,7 @@ function addSong() {
   const stem = form.stem.value;
   const parentFolder = form.parentFolder.value;
 
-  const cookies = document.cookie.split("=");
-  const token = cookies[cookies.length - 1];
+  const token = getToken();
 
   fetch("https://djoser-beats.ew.r.appspot.com/addNewSong", {
     method: "POST",

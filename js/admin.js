@@ -2,12 +2,12 @@ function addSong() {
   const form = document.getElementsByTagName("form")[0];
   const name = form.name.value;
   const bpm = form.bpm.value;
+  const key = form.key.value;
   const image = form.image.value;
   const mp3Edit = form.mp3.value;
   const mp3Org = form.mp3.value;
   const wav = form.wav.value;
   const stem = form.stem.value;
-  const licence = form.licence.value;
   const parentFolder = form.parentFolder.value;
 
   const cookies = document.cookie.split("=");
@@ -22,12 +22,12 @@ function addSong() {
     body: JSON.stringify({
       name,
       bpm,
+      key,
       image,
       mp3Edit,
       mp3Org,
       wav,
       stem,
-      licence,
       parentFolder,
     }),
   })

@@ -4,8 +4,8 @@ function addSong() {
   const bpm = form.bpm.value;
   const key = form.key.value;
   const image = form.image.value;
-  const mp3Edit = form.mp3.value;
-  const mp3Org = form.mp3.value;
+  const mp3Edit = form.mp3Edit.value;
+  const mp3Org = form.mp3Org.value;
   const wav = form.wav.value;
   const stem = form.stem.value;
   const parentFolder = form.parentFolder.value;

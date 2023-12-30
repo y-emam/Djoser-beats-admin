@@ -18,6 +18,11 @@ function addSong() {
 
   const token = getToken();
 
+  // Show loading
+  const button = document.getElementById("addSongButton");
+  button.value = "Loading...";
+  button.disabled = true;
+
   fetch("https://djoser-beats.ew.r.appspot.com/addNewSong", {
     method: "POST",
     headers: {
@@ -42,4 +47,8 @@ function addSong() {
       alert(res.message);
     })
     .catch((e) => alert(`Error: ${e}`));
+
+  // return the button to be working again
+  button.value = "Add Song";
+  button.disabled = false;
 }

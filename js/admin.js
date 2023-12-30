@@ -38,6 +38,6 @@ function addSong() {
     .then((res) => res.json())
     .then((res) => {
       alert(res.message);
-    });
-  // .catch((e) => alert(`Error: ${e}`));
+    })
+    .catch((e) => alert(`Error: ${e}`));
 }
